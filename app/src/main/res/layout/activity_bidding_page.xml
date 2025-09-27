@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BiddingPage">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="2557dp"
+        android:layout_height="2652dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/screenshot_2024_06_18_141107"
+        tools:layout_editor_absoluteY="-582dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2024_06_18_173238" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="194dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2024_06_18_173834" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="167dp"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/broad_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="39dp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Val: None"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <Button
+            android:id="@+id/undo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="undo" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="reset board" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/southProcess"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:text="1C"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/northProcess"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:rotation="180"
+        android:text="1H"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/eastProcess"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:rotation="270"
+        android:text="1S"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/westProcess"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:rotation="90"
+        android:text="1D"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <LinearLayout
+        android:id="@+id/south_bidding_bar"
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:rotation="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Spinner
+            android:id="@+id/south_bid_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp"/>
+
+        <Button
+            android:id="@+id/south_check_button"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:text="OK"
+            android:textSize="24sp"/>
+
+        <Spinner
+            android:id="@+id/south_call_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/west_bidding_bar"
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:rotation="90"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <Spinner
+            android:id="@+id/west_bid_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp" />
+
+        <Button
+            android:id="@+id/west_check_button"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:text="OK"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/west_call_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/east_bidding_bar"
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:rotation="270"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <Spinner
+            android:id="@+id/east_bid_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp" />
+
+        <Button
+            android:id="@+id/east_check_button"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:text="OK"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/east_call_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/north_bidding_bar"
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:rotation="180"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/north_bid_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp" />
+
+        <Button
+            android:id="@+id/north_check_button"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:text="OK"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/north_call_spinner"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
