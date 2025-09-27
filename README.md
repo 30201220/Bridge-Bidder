@@ -2,13 +2,14 @@
 
 A mobile application designed.  
 Author: **Huang Chen En**
-Demo Video: https://youtu.be/I0NVpJnZKpQ
+
 ---
 
 ## 📌 Overview
 The **Bridge Bidder App** is a tool to simulate the bidding phase of the card game **Bridge**.  
 It provides an interactive interface where users can manage boards, make bids, and practice bridge bidding strategies.
 
+Demo Video: https://youtu.be/I0NVpJnZKpQ
 ---
 
 ## 📂 Project Structure
